@@ -45,10 +45,10 @@ public :
     string getDispo();                                          // Pour obtenir la disponibilite du media
     string getId();                                             // Pour obtenir l'ID
 
-    void emprunter();                                       // Pour rendre la disponibilite a "Emprunte"
-    void rendre();                                          // Pour rendre la disponibilite a "Disponibe"
-    void reserver();                                        // Definit la disponibilite a "Reserve"
-    void vendre();                                          // Definit la disponibilite a "Non disponible"
+    void emprunter();                                           // Pour rendre la disponibilite a "Emprunte"
+    void rendre();                                              // Pour rendre la disponibilite a "Disponibe"
+    void reserver();                                            // Definit la disponibilite a "Reserve"
+    void vendre();                                              // Definit la disponibilite a "Non disponible"
 
     virtual bool    IsEmpty();                                  // Test s'il n'ya aucune information du media
     virtual void    LoadFromFile        (ifstream& filename);   // Reference pour pouvoir utiliser cette fonction dans les classes filles.
