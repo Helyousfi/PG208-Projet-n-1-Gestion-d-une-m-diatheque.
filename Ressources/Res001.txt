@@ -1,0 +1,7 @@
+3
+Ressource
+Nom001
+Auteur001
+Taille001
+www.001.com
+Disponible
