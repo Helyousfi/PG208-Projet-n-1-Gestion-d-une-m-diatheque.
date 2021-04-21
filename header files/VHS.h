@@ -5,11 +5,10 @@
 
 class VHS : public Ressource
 {
+    
 protected :
     string _duree;
     string _maisonProd;
-
-
 
 public :
 

@@ -6,9 +6,7 @@
 #include <sstream>
 #include <cstring>
 #include <vector>
-
 using namespace std;
-
 class Ressource
 {
 protected :
