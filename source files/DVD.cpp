@@ -44,8 +44,8 @@ void    DVD::SaveToFile(ofstream& filename)
     if(filename.is_open())  //Fichier est ouvert ?
     {
         //Tout est OK, on peut utiliser le fichier
-        Ressource::SaveToFile(filename);
-        filename << _nbrePistes;
+        VHS::SaveToFile(filename);
+        filename << _nbrePistes     << endl ;
     }
     else
     {
@@ -58,7 +58,7 @@ DVD :: DVD   (ifstream& filename)
 }
 DVD :: DVD   (vector<string> data) : VHS(data)
 {
-    _nbrePistes = stoi(data[6]);
+    _nbrePistes = stoi(data[7]);
 }
 DVD :: DVD(int nbrCopies, string type, string nom, 
         string auteur, string taille, string chemin, 

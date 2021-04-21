@@ -45,8 +45,8 @@ void    VHS::SaveToFile(ofstream& filename)
     {
         //Tout est OK, on peut utiliser le fichier
         Ressource::SaveToFile(filename);
-        filename << _duree;
-        filename << _maisonProd;
+        filename << _duree        << endl;
+        filename << _maisonProd   << endl;
     }
     else
     {
@@ -60,8 +60,8 @@ VHS :: VHS   (ifstream& filename)
 }
 VHS :: VHS   (vector<string> data) : Ressource(data)
 {
-    _duree                  = data[4];
-    _maisonProd             = data[5];
+    _duree                  = data[5];
+    _maisonProd             = data[6];
 }
 VHS :: VHS   (int nbrCopies, string type,  string nom, string auteur  , string taille, string chemin,     // Constructeur de Ressource a partir de parametres
     string duree, string maisonProd) : Ressource   (nbrCopies, type,  nom, auteur  , taille, chemin)

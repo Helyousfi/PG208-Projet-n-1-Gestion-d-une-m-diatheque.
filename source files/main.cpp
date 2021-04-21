@@ -1,5 +1,6 @@
 #include "..\header files\Revue.h"
-#include "..\header files\VHS.h"
+#include "..\header files\CD.h"
+
 
 int main()
 {   
@@ -86,7 +87,6 @@ int main()
     Revue02.rendre();
     Revue02.AfficherInfo();
     */
-    #endif
     
     ifstream fs1("../VHS/vhs02.txt");
     VHS vhs02(fs1);
@@ -96,9 +96,18 @@ int main()
     ifstream fs2("../VHS/vhs01.txt");
     VHS vhs01(fs2);
     vhs01.AfficherInfo();
-    
+    #endif
 
 
+
+    vector<string> data = {"2", "CD02", "Auteur001", "11cm x 17cm", "www.cd01.com","12h","Prod", "485", "titre"};
+    CD cd01(data);
+    cd01.AfficherInfo();
+    ofstream fs2("../CD/cd02.txt");
+    cd01.SaveToFile(fs2);
+    //dvd01.vendre();
+    //dvd01.vendre();
+    //dvd01.AfficherInfo();
 
     return 0;
 }
