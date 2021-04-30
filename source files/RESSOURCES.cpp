@@ -28,9 +28,9 @@ Ressource :: Ressource   (int nbrCopies, string type,  string nom, string auteur
 
 Ressource :: Ressource   (ifstream& filename)
 {
-    LoadFromFile(filename);
     _disp = "Disponible";
     _id = "RES-00000"+to_string(_N++);
+    LoadFromFile(filename);
     cout << "Creation d'un media dont l'id est :" << _id << endl;
 }
 Ressource::Ressource(vector<string> data){

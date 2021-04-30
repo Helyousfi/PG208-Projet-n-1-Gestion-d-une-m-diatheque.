@@ -105,9 +105,24 @@ int main()
     cd01.AfficherInfo();
     ofstream fs2("../CD/cd02.txt");
     cd01.SaveToFile(fs2);
+
+    cout << "Info cd 2 :" << endl;
+    ifstream fs1("../CD/cd01.txt");
+    CD cd02(fs1);
+    cd02.AfficherInfo();
     //dvd01.vendre();
     //dvd01.vendre();
     //dvd01.AfficherInfo();
+
+
+    ifstream fs3("../Revues/Revue02.txt");
+    Revue Revue01(fs3);
+    Revue01.AfficherInfo();
+    Revue01.reserver();
+    Revue01.AfficherInfo();
+    Revue01.rendre();
+    Revue01.AfficherInfo();
+
 
     return 0;
 }
