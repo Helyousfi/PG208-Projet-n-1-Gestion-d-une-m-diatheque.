@@ -6,32 +6,29 @@
 #include <fstream>
 #include <sstream>
 #include <cstring>
+#include <vector>
 #include "RESSOURCES.h"
-#include "livre.h"
-#include "Revue.h"
-#include "VHS.h"
-#include "DVD.h"
-#include "NUMERIQUE.h"
 
 class Interface
 {
 public :
-    Interface();
-    ~Interface();
-    void Bye();                                 //Destruction des ressources allouées
+    void Bye();                                //Destruction des ressources allouées
+    void AfficherInfo_base_donnee();
+    void AfficherInfo_recherche();
     void AddType(string type);         //Enregistrer un type dans un fichier : type = Livre("Paulo Coelho","The alchimist","2006");
-    bool LoadFromFile(const char* filename);
-    void saveToFile(const char* filename);
-    void SearchChaine(string chaine);
+    void LoadFromFile(string filename);
+    void SaveToFile(string filename);
+    void SearchChaine(string recherche);
     void Clear();
     void List();
-    void Show_ID(int ID);
-    void Delete_ID(int ID);
-    void RESET();
+    void Show_ID(string ID);
+    void Delete_ID(string ID);
+    void Reset();
 private:
-    vector<Ressource*> _base_donnee;
-    vector<Ressource*> _recherche;
-    vector<Ressource*> _emprunt;
+      vector <Ressource*> _base_donnee;
+      vector <Ressource*> _recherche;
+      vector <Ressource*> _emprunt;
+
 };
 
 
