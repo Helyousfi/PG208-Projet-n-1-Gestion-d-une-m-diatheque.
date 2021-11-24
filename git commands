@@ -1,6 +1,6 @@
 git init
 git config --global user.name "helyousfi"
-git config --global user.email "hamza.el_yousfi@bordeaux-inp.fr"
+git config --global user.email "email@email.fr"
 $ git remote add origin https://github.com/Helyousfi/PG208-Projet-n-1-Gestion-d-une-m-diath-que.
 
 
